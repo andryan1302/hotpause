@@ -36,6 +36,5 @@ class TicketController extends Controller
         $data = Detail::join('tickets', 'details.ticket_id', '=', 'tickets.id')->where('tickets.id',$id)->first();
 
         return view('detail',['data' => $data]);
-
     }
 }
