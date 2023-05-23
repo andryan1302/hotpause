@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TicketController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/test',[TicketController::class,'index'])->name('test');
+Route::get('/test2/{id}',[TicketController::class,'find'])->name('find');
+Route::get('/test3/{id}',[TicketController::class,'detail'])->name('detail');
