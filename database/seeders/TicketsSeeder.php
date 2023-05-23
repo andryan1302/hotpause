@@ -17,7 +17,7 @@ class TicketsSeeder extends Seeder
     {
         for($i=1;$i<=100;$i++){
             DB::table('tickets')->insert([
-                'category_id' => rand(1,8),
+                'category_id' => rand(1,7),
                 'seat' => rand(1,100)
             ]);
         }

@@ -16,13 +16,21 @@
                   </tr>
                 </thead>
                 <tbody>
-                  @foreach($tickets as $key => $ticket)
-                  <tr>
-                    <th scope="row">{{$key+1}}</th>
-                    <td>{{ $ticket->seat }}</td>
-                    <td><a href="{{ route('detail',$ticket->id)}}">Detail</a></td>
-                  </tr>
-                  @endforeach
+                  @if($tickets->count() > 0)
+                    @foreach($tickets as $key => $ticket)
+                    <tr>
+                      <th scope="row">{{$key+1}}</th>
+                      <td>{{ $ticket->seat }}</td>
+                      <td><a href="{{ route('detail',$ticket->id)}}">Detail</a></td>
+                    </tr>
+                    @endforeach
+                  @else
+                    <tr>
+                      <th scope="row" class="text-danger"><h4>No data...</h4></th>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  @endif
                 </tbody>
               </table>
         </div>

@@ -11,7 +11,10 @@
             <a class="nav-link active fw-bold" style="font-size:20px"aria-current="page" href="{{ route('home' )}}"">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" style="font-size:20px"aria-current="page" href="{{ route('test') }}">Ticket</a>
+            <a class="nav-link active fw-bold" style="font-size:20px"aria-current="page" href="{{ route('test') }}">Ticket</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" style="font-size:20px"aria-current="page" href="{{ route('contact') }}">Contact</a>
           </li>
         </ul>
       </div>

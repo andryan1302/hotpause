@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('details', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('ticket_id')->constrrained('tickets');
+            // $table->foreignId('ticket_id')->constrrained('tickets');
+            $table->foreignId('ticket_id')->references('id')->on('tickets');
             $table->date('start_date');
             $table->string('place',255);
             $table->integer('price');

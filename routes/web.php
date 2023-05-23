@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/test',[TicketController::class,'index'])->name('test');
 Route::get('/test2/{id}',[TicketController::class,'find'])->name('find');
 Route::get('/test3/{id}',[TicketController::class,'detail'])->name('detail');
+Route::get('/contact',[TicketController::class,'contact'])->name('contact');
