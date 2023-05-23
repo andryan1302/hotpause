@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container-fluid m-0 p-0">
-    <img src="{{ asset('img/bg.jpg')}}" class="w-100 bg-cover" alt="">
+    <img src="{{ asset('img/banner.jpeg')}}" class="w-100 bg-cover" alt="">
 </div>
 <div class="container d-flex align-items-center p-4 flex-column gap-3">
     <h1 class="fw-bold">News</h1>
